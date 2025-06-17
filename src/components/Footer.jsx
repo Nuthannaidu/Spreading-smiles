@@ -36,23 +36,19 @@ export default function Home() {
 
       {/* Left Banner - Fixed with complete SPREADING text */}
       <div
-        className={`absolute top-0 left-0 w-24 md:w-28 h-full bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white text-2xl md:text-3xl font-bold transition-all duration-1000 ease-out shadow-2xl border-r border-sky-700/50 ${
+        className={`absolute top-0 left-0 w-20 md:w-24 h-full bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white transition-all duration-1000 ease-out shadow-2xl border-r border-sky-700/50 ${
           animate ? "translate-y-0 opacity-100" : "-translate-y-full opacity-80"
         }`}
         style={{ 
-          writingMode: "vertical-rl", 
-          textOrientation: "upright", 
-          padding: "2rem 0", 
           marginTop: "18px",
           backdropFilter: "blur(8px)",
-          borderRadius: "0 8px 8px 0",
-          letterSpacing: "0.3em"
+          borderRadius: "0 8px 8px 0"
         }}
       >
-        <div className="tracking-wider drop-shadow-lg text-white font-extrabold flex flex-col items-center" style={{ 
-          transform: "rotate(0deg)",
-          lineHeight: "1.4",
-          gap: "0.1em"
+        <div className="drop-shadow-lg text-white font-extrabold flex flex-col items-center justify-center h-full py-8" style={{ 
+          fontSize: "1.25rem",
+          lineHeight: "1.2",
+          gap: "0.5rem"
         }}>
           <span>S</span>
           <span>P</span>
@@ -71,22 +67,18 @@ export default function Home() {
 
       {/* Right Banner - Fixed with complete SMILES text */}
       <div
-        className={`absolute top-0 right-0 w-24 md:w-28 h-full bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white text-2xl md:text-3xl font-bold transition-all duration-1000 ease-out shadow-2xl border-l border-sky-700/50 ${
+        className={`absolute top-0 right-0 w-20 md:w-24 h-full bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white transition-all duration-1000 ease-out shadow-2xl border-l border-sky-700/50 ${
           animate ? "translate-y-0 opacity-100" : "translate-y-full opacity-80"
         }`}
         style={{ 
-          writingMode: "vertical-rl", 
-          textOrientation: "upright", 
-          padding: "2rem 0",
           backdropFilter: "blur(8px)",
-          borderRadius: "8px 0 0 8px",
-          letterSpacing: "0.3em"
+          borderRadius: "8px 0 0 8px"
         }}
       >
-        <div className="tracking-wider drop-shadow-lg text-white font-extrabold flex flex-col items-center" style={{ 
-          transform: "rotate(0deg)",
-          lineHeight: "1.4",
-          gap: "0.1em"
+        <div className="drop-shadow-lg text-white font-extrabold flex flex-col items-center justify-center h-full py-8" style={{ 
+          fontSize: "1.25rem",
+          lineHeight: "1.2",
+          gap: "0.8rem"
         }}>
           <span>S</span>
           <span>M</span>
