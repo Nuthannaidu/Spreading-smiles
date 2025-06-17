@@ -41,14 +41,14 @@ export default function Home() {
         }`}
         style={{ 
           writingMode: "vertical-rl", 
-          textOrientation: "upright", 
+          textOrientation: "mixed", 
           padding: "5.5rem", 
           marginTop: "18px",
           backdropFilter: "blur(8px)",
           borderRadius: "0 8px 8px 0"
         }}
       >
-        <span className="tracking-wider drop-shadow-lg bg-gradient-to-b from-white via-sky-100 to-sky-200 bg-clip-text text-transparent font-extrabold">
+        <span className="tracking-wider drop-shadow-lg text-white font-extrabold">
           Spreading
         </span>
         
@@ -63,13 +63,13 @@ export default function Home() {
         }`}
         style={{ 
           writingMode: "vertical-rl", 
-          textOrientation: "upright", 
+          textOrientation: "mixed", 
           padding: "5.5rem",
           backdropFilter: "blur(8px)",
           borderRadius: "8px 0 0 8px"
         }}
       >
-        <span className="tracking-wider drop-shadow-lg bg-gradient-to-b from-white via-sky-100 to-sky-200 bg-clip-text text-transparent font-extrabold">
+        <span className="tracking-wider drop-shadow-lg text-white font-extrabold">
           Smiles
         </span>
         
