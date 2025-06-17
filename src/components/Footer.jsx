@@ -36,19 +36,21 @@ export default function Home() {
 
       {/* Left Banner - Fixed with complete SPREADING text */}
       <div
-        className={`absolute top-0 left-0 w-20 md:w-24 h-full bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white transition-all duration-1000 ease-out shadow-2xl border-r border-sky-700/50 ${
+        className={`absolute left-0 w-20 md:w-24 bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white transition-all duration-1000 ease-out shadow-2xl border-r border-sky-700/50 ${
           animate ? "translate-y-0 opacity-100" : "-translate-y-full opacity-80"
         }`}
         style={{ 
-          marginTop: "18px",
+          top: "64px",
+          bottom: "0",
           backdropFilter: "blur(8px)",
           borderRadius: "0 8px 8px 0"
         }}
       >
-        <div className="drop-shadow-lg text-white font-extrabold flex flex-col items-center justify-center h-full py-8" style={{ 
-          fontSize: "1.25rem",
-          lineHeight: "1.2",
-          gap: "0.5rem"
+        <div className="drop-shadow-lg text-white font-extrabold flex flex-col items-center justify-center h-full" style={{ 
+          fontSize: "1.1rem",
+          lineHeight: "1",
+          gap: "0.3rem",
+          padding: "1rem 0"
         }}>
           <span>S</span>
           <span>P</span>
@@ -67,18 +69,21 @@ export default function Home() {
 
       {/* Right Banner - Fixed with complete SMILES text */}
       <div
-        className={`absolute top-0 right-0 w-20 md:w-24 h-full bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white transition-all duration-1000 ease-out shadow-2xl border-l border-sky-700/50 ${
+        className={`absolute right-0 w-20 md:w-24 bg-gradient-to-b from-sky-800/95 via-sky-900/95 to-sky-800/95 md:flex hidden items-center justify-center text-white transition-all duration-1000 ease-out shadow-2xl border-l border-sky-700/50 ${
           animate ? "translate-y-0 opacity-100" : "translate-y-full opacity-80"
         }`}
         style={{ 
+          top: "64px",
+          bottom: "0",
           backdropFilter: "blur(8px)",
           borderRadius: "8px 0 0 8px"
         }}
       >
-        <div className="drop-shadow-lg text-white font-extrabold flex flex-col items-center justify-center h-full py-8" style={{ 
-          fontSize: "1.25rem",
-          lineHeight: "1.2",
-          gap: "0.8rem"
+        <div className="drop-shadow-lg text-white font-extrabold flex flex-col items-center justify-center h-full" style={{ 
+          fontSize: "1.1rem",
+          lineHeight: "1",
+          gap: "0.5rem",
+          padding: "1rem 0"
         }}>
           <span>S</span>
           <span>M</span>
