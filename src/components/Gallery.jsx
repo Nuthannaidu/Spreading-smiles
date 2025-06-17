@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight, X, Heart, Download, Share2, ZoomIn } from "lucide-react";
 import photo1 from "../assets/1.jpg";
