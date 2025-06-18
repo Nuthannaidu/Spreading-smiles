@@ -55,12 +55,12 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-sky-300 to-sky-400"></div>
 
       {/* Main footer content */}
-      <div className="relative z-10 container mx-auto px-6 md:px-12 py-16">
+      <div className="relative z-10 container mx-auto px-6 md:px-12 py-8">
         {/* Top section with logo and main content */}
         <div className={`transition-all duration-1000 ease-out ${animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {/* Logo and tagline section */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 relative">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 relative">
               <span className="bg-gradient-to-r from-sky-200 via-white to-sky-200 bg-clip-text text-transparent drop-shadow-lg">
                 Spreading Smiles
               </span>
@@ -68,35 +68,35 @@ export default function Footer() {
                 Spreading Smiles
               </div>
             </h2>
-            <p className="text-sky-200/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sky-200/80 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
               Together, we create lasting impact through compassion, community, and care
             </p>
           </div>
 
           {/* Main footer grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-8">
             {/* Contact Info */}
             <div 
               className={`transition-all duration-500 delay-200 ${animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
               onMouseEnter={() => setHoveredSection('contact')}
               onMouseLeave={() => setHoveredSection(null)}
             >
-              <h3 className="text-xl font-semibold mb-6 text-sky-200 relative">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-6 text-sky-200 relative">
                 Get In Touch
                 <div className={`absolute bottom-0 left-0 h-0.5 bg-sky-400 transition-all duration-300 ${hoveredSection === 'contact' ? 'w-full' : 'w-8'}`}></div>
               </h3>
-              <div className="space-y-4 text-sky-100/80">
-                <div className="flex items-center gap-3 group hover:text-white transition-colors duration-300">
-                  <span className="text-lg">📧</span>
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">hello@spreadingsmiles.org</span>
+              <div className="space-y-2 md:space-y-4 text-sky-100/80 text-sm md:text-base">
+                <div className="flex items-center gap-2 md:gap-3 group hover:text-white transition-colors duration-300">
+                  <span className="text-sm md:text-lg">📧</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300 truncate">hello@spreadingsmiles.org</span>
                 </div>
-                <div className="flex items-center gap-3 group hover:text-white transition-colors duration-300">
-                  <span className="text-lg">📞</span>
+                <div className="flex items-center gap-2 md:gap-3 group hover:text-white transition-colors duration-300">
+                  <span className="text-sm md:text-lg">📞</span>
                   <span className="group-hover:translate-x-1 transition-transform duration-300">+1 (555) 123-SMILE</span>
                 </div>
-                <div className="flex items-center gap-3 group hover:text-white transition-colors duration-300">
-                  <span className="text-lg">📍</span>
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">123 Hope Street<br />Community Center, CA 90210</span>
+                <div className="flex items-start gap-2 md:gap-3 group hover:text-white transition-colors duration-300">
+                  <span className="text-sm md:text-lg">📍</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300 text-xs md:text-sm leading-tight">123 Hope Street<br />Community Center, CA 90210</span>
                 </div>
               </div>
             </div>
@@ -107,16 +107,16 @@ export default function Footer() {
               onMouseEnter={() => setHoveredSection('links')}
               onMouseLeave={() => setHoveredSection(null)}
             >
-              <h3 className="text-xl font-semibold mb-6 text-sky-200 relative">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-6 text-sky-200 relative">
                 Quick Links
                 <div className={`absolute bottom-0 left-0 h-0.5 bg-sky-400 transition-all duration-300 ${hoveredSection === 'links' ? 'w-full' : 'w-8'}`}></div>
               </h3>
-              <ul className="space-y-3">
-                {quickLinks.map((link, index) => (
+              <ul className="space-y-1 md:space-y-3">
+                {quickLinks.slice(0, 4).map((link, index) => (
                   <li key={index}>
                     <a 
                       href="#" 
-                      className="text-sky-100/80 hover:text-white hover:translate-x-2 transition-all duration-300 inline-block group"
+                      className="text-sky-100/80 hover:text-white hover:translate-x-2 transition-all duration-300 inline-block group text-sm md:text-base"
                     >
                       <span className="group-hover:bg-sky-700/30 group-hover:px-2 group-hover:py-1 group-hover:rounded transition-all duration-300">
                         {link}
@@ -133,16 +133,16 @@ export default function Footer() {
               onMouseEnter={() => setHoveredSection('programs')}
               onMouseLeave={() => setHoveredSection(null)}
             >
-              <h3 className="text-xl font-semibold mb-6 text-sky-200 relative">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-6 text-sky-200 relative">
                 Our Programs
                 <div className={`absolute bottom-0 left-0 h-0.5 bg-sky-400 transition-all duration-300 ${hoveredSection === 'programs' ? 'w-full' : 'w-8'}`}></div>
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-1 md:space-y-3">
                 {programs.map((program, index) => (
                   <li key={index}>
                     <a 
                       href="#" 
-                      className="text-sky-100/80 hover:text-white hover:translate-x-2 transition-all duration-300 inline-block group"
+                      className="text-sky-100/80 hover:text-white hover:translate-x-2 transition-all duration-300 inline-block group text-sm md:text-base"
                     >
                       <span className="group-hover:bg-sky-700/30 group-hover:px-2 group-hover:py-1 group-hover:rounded transition-all duration-300">
                         {program}
@@ -153,9 +153,9 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Newsletter Signup */}
+            {/* Newsletter Signup - Hidden on mobile, shown on larger screens */}
             <div 
-              className={`transition-all duration-500 delay-800 ${animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+              className={`hidden lg:block transition-all duration-500 delay-800 ${animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
               onMouseEnter={() => setHoveredSection('newsletter')}
               onMouseLeave={() => setHoveredSection(null)}
             >
@@ -184,17 +184,17 @@ export default function Footer() {
         {/* Social media and bottom section */}
         <div className={`transition-all duration-1000 delay-1000 ease-out ${animate ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {/* Social Media Links */}
-          <div className="text-center mb-8">
-            <h4 className="text-sky-200 mb-6 text-lg font-medium">Follow Our Journey</h4>
-            <div className="flex justify-center gap-6">
+          <div className="text-center mb-6">
+            <h4 className="text-sky-200 mb-4 text-base md:text-lg font-medium">Follow Our Journey</h4>
+            <div className="flex justify-center gap-4 md:gap-6">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
                   href={social.url}
-                  className="group relative w-12 h-12 bg-sky-800/50 rounded-full flex items-center justify-center border border-sky-600/30 hover:border-sky-400 transition-all duration-300 hover:bg-sky-700/70 hover:-translate-y-2 hover:shadow-lg backdrop-blur-sm"
+                  className="group relative w-10 h-10 md:w-12 md:h-12 bg-sky-800/50 rounded-full flex items-center justify-center border border-sky-600/30 hover:border-sky-400 transition-all duration-300 hover:bg-sky-700/70 hover:-translate-y-2 hover:shadow-lg backdrop-blur-sm"
                   title={social.name}
                 >
-                  <span className="text-xl group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-lg md:text-xl group-hover:scale-110 transition-transform duration-300">
                     {social.icon}
                   </span>
                   
@@ -206,12 +206,12 @@ export default function Footer() {
           </div>
 
           {/* Bottom border */}
-          <div className="border-t border-sky-700/50 pt-8">
+          <div className="border-t border-sky-700/50 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <div className="text-sky-300/80 text-sm">
+              <div className="text-sky-300/80 text-xs md:text-sm text-center md:text-left">
                 © 2025 Spreading Smiles. All rights reserved. • Made with ❤️ for our community
               </div>
-              <div className="flex gap-6 text-sm text-sky-300/80">
+              <div className="flex gap-4 md:gap-6 text-xs md:text-sm text-sky-300/80">
                 <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
                 <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
                 <a href="#" className="hover:text-white transition-colors duration-300">Accessibility</a>
